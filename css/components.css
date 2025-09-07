@@ -1,0 +1,12 @@
+/* Componentes CSS customizados para Liga Swift */
+
+/* Componente: Card de destaque */
+.featured-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 1rem 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
