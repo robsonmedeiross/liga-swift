@@ -1,0 +1,26 @@
+:root {
+    --cor-laranja: #ED5C2C;
+    --cor-preta: #000000;
+}
+
+.logo{
+    width: 20%;
+    margin: 10px 0 20px 0;
+}
+
+.formulario{
+    font-family: "Inter", sans-serif;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn.botao{
+    margin-top: 15px;
+    background-color: var(--cor-laranja);
+    color: #FFFF;
+}
+
+.btn.botao:hover{
+    background-color: #fc4b10;
+    color: #FFFF;
+}
