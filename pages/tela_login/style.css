@@ -1,0 +1,40 @@
+:root {
+    --cor-laranja: #ED5C2C;
+    --cor-preta: #000000;
+}
+
+.logo{
+    width: 20%;
+    margin: 10px 0 20px 0;
+}
+
+.user{
+    width:20%;
+    margin-bottom: 40px;
+}
+
+.formulario{
+    color: var(--cor-preta);
+    font-family: "Inter", sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.btn.botao{
+    margin-top: 15px;
+    background-color: var(--cor-laranja);
+    color: #FFFF;
+}
+
+.btn.botao:hover{
+    background-color: #fc4b10;
+    color: #FFFF;
+}
+
+.link{
+    color: var(--cor-laranja);
+}
+
+.link:hover{
+    text-decoration: none;
+    color: #fc4b10;
+}
