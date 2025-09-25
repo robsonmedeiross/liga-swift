@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-laranja: #ED5C2C;
+    --cor-preta: #000000;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --highlight-bg: #fff5f5;
+    --first-place-bg: #fff1f1;
+    --tab-active-bg: #f0f0f0;
+    --dourado: #FCD34D;
+    --cinza: #64748B;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    height: 100vh;
+    padding-top: 70px;
+}
+
+.logo {
+    max-width: 190px;
+    height: auto;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1100;
+    padding: 4px 16px;
+    border-radius: 12px;
+    background: transparent;
+    transition: background 0.3s;
+}
+
+.logo.logo-bg {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-pontos {
+    background-color: var(--cor-laranja);
+}
+
+.tab-container {
+    background: #fff;
+    border-radius: 10px;
+    padding: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-menu {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 12px 24px;
+    border: none;
+    background: transparent;
+    color: var(--cinza);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-button.active {
+    background-color: var(--tab-active-bg);
+    font-weight: 600;
+}
+
+.tab-button:hover:not(.active) {
+    background-color: #f8f9fa;
+}
+
+#container-vales,
+#container-produtos,
+#container-experiencias {
+    display: none;
+}
+
+#container-vales.active,
+#container-produtos.active,
+#container-experiencias.active {
+    display: block !important;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-premio {
+    width: 48px;
+    height: auto;
+    display: block;
+    margin: 8% auto 0 auto;
+}
+
+.bottom-nav {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    height: 64px;
+    gap: 10%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    max-width: 50%;
+    width: 100%;
+}
+
+.bottom-nav-item {
+    flex: 1;
+    text-align: center;
+    color: var(--cinza);
+    text-decoration: none;
+    transition: color 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+}
+
+.bottom-nav-item .material-icons {
+    font-size: 24px;
+    margin-bottom: 2px;
+    
+}
+
+.bottom-nav-item.active,
+.bottom-nav-item:active,
+.bottom-nav-item:hover {
+    color: var(--cor-laranja);
+}
+
+.bottom-nav .nav-label {
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+footer {
+    margin-top: 150px;
+    height: 150px;
+    width: 100%;
+}
