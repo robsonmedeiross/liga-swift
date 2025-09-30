@@ -15,25 +15,90 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Main Content -->
-    <main class="container mt-4">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="text-center mb-4">Perfil</h1>
-                <p class="lead text-center">Tela em construção...</p>
+    <main class="container my-4">
+        
+        <!-- Logo -->
+        <div class="text-center mb-4">
+            <img src="../../assets/images/logo_swift.png" class="logo" alt="Logo Swift" id="logo">
+        </div>
+        
+        <!-- Perfil -->
+        <div class="profile-card d-flex align-items-center">
+            <div class="profile-img me-3">AS</div>
+            <div>
+                <strong>Ana Silva</strong><br>
+                <span class="tag">Nivel - Expert</span>
             </div>
         </div>
+
+        <!-- Tabs -->
+        <div class="d-flex mb-3">
+            <button class="btn tab-button active" onclick="showTab('pessoal')">Pessoal</button>
+            <button class="btn tab-button" onclick="showTab('preferencias')">Preferências</button>
+        </div>
+
+        <!--Formulario - Pessoal -->
+        <div id="pessoal" class="tab-content">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Nome completo" alt="Nome completo">
+            </div>
+            <div class="mb-3">
+                <label for="cargo" class="form-label">Cargo</label>
+                <input type="text" class="form-control" id="cargo" placeholder="Cargo" alt="Escreva o seu Cargo">
+            </div>
+            <div class="mb-3">
+                <label for="loja" class="form-label">Loja</label>
+                <input type="text" class="form-control" id="loja" placeholder="Loja" alt="Escreva o nome da Loja">
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-orange w-100" type="submit">
+                    <i class="bi bi-save"></i>Salvar
+                </button>
+            </div>
+        </div>
+
+        <!-- Formulario - Preferêcias-->
+        <div id="preferencias" class="tab-content d-none">
+            <div class="mb-3">
+                <label for="tema" class="form-label">Tema</label>
+                <select class="form-select" id="tema">
+                    <option>Claro</option>
+                    <option>Escuro</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="idioma" class="form-label">Idioma</label>
+                <select class="form-select" id="idioma">
+                    <option>Português</option>
+                    <option>Inglês</option>
+                </select>
+            </div>
+        </div>
+
     </main>
 
+    <!-- Menu Inferior-->
+    <nav class="nav nav-pills nav-fill nav-button">
+        <a class="nav-link" href="../home/index.html"><i class="bi bi-house"></i><br>Início</a>
+        <a class="nav-link" href="#"><i class="bi bi-flag"></i><br>Desafios</a>
+        <a class="nav-link" href="../ranking/index.html"><i class="bi bi-bar-chart"></i><br>Ranking</a>
+        <a class="nav-link" href="#"><i class="bi bi-gift"></i><br>Prêmios</a>
+        <a class="nav-link" href="../perfil/index.html"><i class="bi bi-person"></i><br>Perfil</a>
+    </nav>
+
+    <!-- Bootstrap & Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
     <!-- Custom JS -->
-    <script src="js/main.js"></script>
-    <script src="js/utils.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
