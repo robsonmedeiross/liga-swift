@@ -162,8 +162,28 @@ body {
     margin-top: 2px;
 }
 
+/* Estilos para navegação */
+.nav-button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    flex-wrap: nowrap;
+}
+
+.nav-button .nav-link {
+    color: #888;
+    font-size: 0.9rem;
+    
+    &:hover {
+        color: var(--cor-laranja);
+    }
+}
+
 footer {
-    margin-top: 150px;
-    height: 150px;
+    margin-top: 60px;
+    height: 60px;
     width: 100%;
 }
