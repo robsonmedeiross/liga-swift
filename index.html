@@ -25,18 +25,146 @@
     <main class="container mt-4">
         <div class="row">
             <div class="col-12">
-                <h1 class="text-center mb-4">Bem-vindo ao Liga Swift</h1>
-                <p class="lead text-center">Seu projeto frontend está pronto para desenvolvimento!</p>
+                <!-- Logo -->
+                <div class="text-center mb-4">
+                    <img src="./assets/images/logo_swift.png" class="logo" alt="Logo Swift">
+                </div>
+
+                <!-- Criar componentes de home aqui -->
+                <section id="container-homer">
+                    <!-- Row 1: Informações do Usuário -->
+                    <div class="row mb-4 justify-content-center">
+                        <div class="col-12 col-8">
+                            <div class="d-flex align-items-center justify-content-between rounded p-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="./assets/images/user.png" alt="Avatar" class="rounded-circle me-3" style="width:56px;height:56px;">
+                                    <div>
+                                        <div class="fw-bold fs-5 text-center text-md-start">Ana Silva</div>
+                                        <div class="text-center text-md-start" style="font-size:0.95rem;color:#FF7A00;">Nível - Expert</div>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                    <span class="badge rounded-pill bg-warning text-dark fs-6 px-3 py-2">2.532pts</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Sequências e Combo -->
+                    <div class="row mb-4 justify-content-center">
+                        <div class="col-12 col-8">
+                            <div class="row g-3">
+                                <!-- Sequência atual (esquerda) -->
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="rounded d-flex flex-column" style="height: 320px; border:1px solid #FCD34D; background:transparent;">
+                                        <div class="p-3 fw-bold mb-2" style="color:#FFffff; background-color: #F97316;">Sequência atual</div>
+                                        <div class="flex d-flex flex-column align-items-center p-3">
+                                            <div class="position-relative mb-2" style="width:90px;height:90px;">
+                                                <img src="./assets/icons/icon-fire.svg" alt="Avatar" class="position-absolute" style="right: 0; width:25px;height:25px;">
+                                                <svg width="90" height="90">
+                                                    <circle cx="45" cy="45" r="40" stroke="#FCD34D" stroke-width="6" fill="none" />
+                                                    <text x="45" y="52" text-anchor="middle" font-size="2em" fill="#FF7A00" font-family="Inter">5</text>
+                                                </svg>
+                                                <div class="position-absolute w-100 text-center" style="top:52px;left:0;font-size:0.95rem;color:#888;">dias</div>
+                                            </div>
+                                            <div class="w-100 mb-2">
+                                                <div class="progress" style="height:8px;">
+                                                    <div class="progress-bar bg-warning" style="width:60%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100 text-center mt-2" style="font-size:0.95rem;color:#FF7A00;">Seu recorde:<br><span style="color:#FF3B3B;">Continue vendendo para aumentar seu combo!</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Sequência atual (direita) -->
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="rounded" style="height: 320px; border:1px solid #FCD34D; background:transparent;">
+                                        <div class="fw-bold mb-2 p-3 " style="color:#FFFFFF; background-color: #F97316;">Sequência atual</div>
+                                        <div class="mb-3 p-3">
+                                            <div class="mb-2">Vendas do dia</div>
+                                            <div class="progress" style="height:8px;">
+                                                <div class="progress-bar bg-warning" style="width:70%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 p-3">
+                                            <div class="mb-2">Cross-sells</div>
+                                            <div class="progress" style="height:8px;">
+                                                <div class="progress-bar bg-warning" style="width:50%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-2 p-3">
+                                            <div class="mb-2">NPS coletados</div>
+                                            <div class="progress" style="height:8px;">
+                                                <div class="progress-bar bg-danger" style="width:80%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Combo de Impacto (abaixo) -->
+                                <div class="col-12">
+                                    <div class="rounded p-3" style="border:1px solid #FCD34D; background:transparent;">
+                                        <div class="fw-bold mb-1" style="color:#FF7A00;">Combo de Impacto</div>
+                                        <div class="mb-1" style="font-size:0.95rem;color:#888;">3 vendas com cross-sell seguidas</div>
+                                        <div class="d-flex align-items-center mb-2">
+                                            <span class="me-2" style="font-size:1.1rem;color:#FF7A00;">2/3</span>
+                                            <div class="flex-grow-1">
+                                                <div class="progress" style="height:8px;">
+                                                    <div class="progress-bar bg-warning" style="width:66%"></div>
+                                                </div>
+                                            </div>
+                                            <span class="ms-2" style="font-size:0.95rem;color:#FF7A00;">+200 pontos!</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 3: Desafios do Dia -->
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-8">
+                            <div class="">
+                                <div class="fw-bold mb-3" style="color:#FF7A00;">
+                                    <i class="bi bi-trophy me-2"></i>Desafios do dia
+                                </div>
+                                <div class="mb-3 rounded bg-light d-flex justify-content-between align-items-center">
+                                    <div class="w-100 p-3 rounded bg-light d-flex justify-content-between align-items-center" style="border:1px solid #E2E8F0;">
+                                        <div>
+                                            <div class="fw-semibold">Combo master</div>
+                                            <div class="text-muted" style="font-size:0.95rem;">Venda 3 combos hoje</div>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="badge bg-warning text-dark me-2">150</span>
+                                            <button class="btn btn-outline-danger btn-sm">Completar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3 rounded bg-light d-flex justify-content-between align-items-center">
+                                    <div class="w-100 p-3 rounded bg-light d-flex justify-content-between align-items-center" style="border:1px solid #E2E8F0;">
+                                        <div>
+                                            <div class="fw-semibold">Cross-sell Pro</div>
+                                            <div class="text-muted" style="font-size:0.95rem;">Ofereça cross-sell em 2 atendimentos</div>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="badge bg-success me-2">100</span>
+                                            <span class="text-success">Completado <i class="bi bi-check2"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 
-            <!-- Menu Inferior-->
-            <nav class="nav nav-pills nav-fill nav-button">
-                <a class="nav-link" href="#"><i class="bi bi-house"></i><br>Início</a>
-                <a class="nav-link" href="./pages/desafios/index.html"><i class="bi bi-flag"></i><br>Desafios</a>
-                <a class="nav-link" href="./pages/ranking/index.html"><i class="bi bi-bar-chart"></i><br>Ranking</a>
-                <a class="nav-link" href="./pages/premios/index.html"><i class="bi bi-gift"></i><br>Prêmios</a>
-                <a class="nav-link" href="./pages/perfil/index.html"><i class="bi bi-person"></i><br>Perfil</a>
-            </nav>
-            <footer></footer>
+                <!-- Menu Inferior-->
+                <nav class="nav nav-pills nav-fill nav-button">
+                    <a class="nav-link" href="#"><i class="bi bi-house"></i><br>Início</a>
+                    <a class="nav-link" href="./pages/desafios/index.html"><i class="bi bi-flag"></i><br>Desafios</a>
+                    <a class="nav-link" href="./pages/ranking/index.html"><i class="bi bi-bar-chart"></i><br>Ranking</a>
+                    <a class="nav-link" href="./pages/premios/index.html"><i class="bi bi-gift"></i><br>Prêmios</a>
+                    <a class="nav-link" href="./pages/perfil/index.html"><i class="bi bi-person"></i><br>Perfil</a>
+                </nav>
+                <footer></footer>
             </div>
         </div>
     </main>
@@ -47,6 +175,5 @@
     
     <!-- Custom JS -->
     <script src="js/main.js"></script>
-    <script src="js/utils.js"></script>
 </body>
 </html>
