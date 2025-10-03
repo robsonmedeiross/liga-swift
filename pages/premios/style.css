@@ -50,7 +50,7 @@ body {
 }
 
 .container-pontos {
-    background-color: var(--cor-laranja);
+    background-color: #F97316;
 }
 
 .tab-container {
@@ -151,10 +151,12 @@ body {
     
 }
 
-.bottom-nav-item.active,
-.bottom-nav-item:active,
-.bottom-nav-item:hover {
-    color: var(--cor-laranja);
+ .nav-link-active {
+    color: var(--cor-laranja) !important;
+}
+
+.nav-link-active i {
+    color: var(--cor-laranja) !important;
 }
 
 .bottom-nav .nav-label {
@@ -162,7 +164,6 @@ body {
     margin-top: 2px;
 }
 
-/* Estilos para navegação */
 .nav-button {
     position: fixed;
     bottom: 0;

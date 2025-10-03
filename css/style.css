@@ -1,13 +1,9 @@
-/* Custom CSS para Liga Swift */
-
-/* Reset e configurações básicas */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Variáveis CSS */
 :root {
     --primary-color: #007bff;
     --secondary-color: #6c757d;
@@ -21,13 +17,13 @@
     --cor-preta: #000000;
 }
 
-/* Estilos globais */
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: var(--dark-color);
     background-color: #f8f9fa;
     color: #333;
+    padding-top: 70px;
 }
 
 footer {
@@ -37,14 +33,79 @@ footer {
 }
 
 
-/* Logo */
 .logo {
-    max-width: 150px;
+    max-width: 190px;
     height: auto;
-    margin-bottom: 1rem;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1100;
+    padding: 4px 16px;
+    border-radius: 12px;
+    background: transparent;
+    transition: background 0.3s;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
 }
 
-/* Estilos para navegação */
+.logo.logo-bg {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#userInfo {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1 );
+
+}
+
+.container-sequencia-esquerdo {
+    height: 320px; 
+    background:transparent
+}
+
+.container-sequencia-esquerdo-header {
+    background-color: var(--cor-laranja);
+    box-shadow: 0 2px 8px rgba(237, 92, 44, 0.3);
+}
+.container-sequencia-direito {
+    height: 320px; 
+    background:transparent
+}
+
+.container-sequencia-direito-header {
+    background-color: var(--cor-laranja);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-custom {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-light {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-medium {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-heavy {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-soft {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-orange {
+    box-shadow: 0 4px 15px rgba(237, 92, 44, 0.3);
+}
+
+.shadow-hover {
+    transition: box-shadow 0.3s ease;
+}
+
+
 .nav-button {
     position: fixed;
     bottom: 0;
@@ -53,6 +114,7 @@ footer {
     background: #fff;
     border-top: 1px solid #ddd;
     flex-wrap: nowrap;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .nav-button .nav-link {
@@ -68,14 +130,25 @@ footer {
     font-weight: bold;
     font-size: 1.5rem;
 }
-/* Estilos para navegação */
 
-/* Estilos para conteúdo principal */
-main {
+.navbar-brand {
     min-height: 80vh;
 }
 
-/* Estilos para botões customizados */
+.bottom-nav-item .material-icons {
+    font-size: 24px;
+    margin-bottom: 2px;
+    
+}
+
+.nav-link-active {
+    color: var(--cor-laranja) !important;
+}
+
+.nav-link-active i {
+    color: var(--cor-laranja) !important;
+}
+
 .btn-custom {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
@@ -89,7 +162,6 @@ main {
     transform: translateY(-2px);
 }
 
-/* Estilos para cards */
 .card-custom {
     border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -100,7 +172,6 @@ main {
     transform: translateY(-5px);
 }
 
-/* Estilos responsivos */
 @media (max-width: 768px) {
     .navbar-brand {
         font-size: 1.2rem;
@@ -111,7 +182,6 @@ main {
     }
 }
 
-/* Utilitários customizados */
 .text-gradient {
     background: linear-gradient(45deg, var(--primary-color), var(--info-color));
     -webkit-background-clip: text;
@@ -119,6 +189,4 @@ main {
     background-clip: text;
 }
 
-.shadow-custom {
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
+
