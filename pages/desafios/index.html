@@ -25,9 +25,80 @@
         <div class="text-center mb-4">
             <img src="../../assets/images/logo_swift.png" class="logo" alt="Logo Swift" id="logo">
         </div>
-        
-        <!-- codigo para desafios -->
-    </main>
+    
+        <!-- Desafios Swift -->
+        <div class="mx-auto" style="max-width: 900px;">
+            <!-- Barra de busca -->
+            <div class="mb-3">
+                <input type="text" class="form-control" id="searchInput" placeholder="Buscar desafios...">
+            </div>
+            <!-- Tabs -->
+
+            <div class="tab-container mb-3">
+                    <div class="tab-menu">
+                        <button class="tab-button active" data-tab="container-diarios">Diários</button>
+                        <button class="tab-button" data-tab="container-semanais">Semanais</button>
+                        <button class="tab-button" data-tab="container-treinamentos">Treinamentos</button>
+                    </div>
+                </div>
+          
+            <!-- Conteúdo dos desafios -->
+            <div class="tab-content">
+                <!-- Diários -->
+                <div class="tab-pane fade show active" id="diarios">
+                    <div id="challengeList">
+                        <!-- Desafio 1 -->
+                        <div class="card mb-3 desafio-card" data-title="Combo master">
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="card-title mb-1">Combo master</h5>
+                                    <p class="card-text text-muted mb-0">Venda 3 combos hoje</p>
+                                </div>
+                                <div class="text-end">
+                                    <span class="badge bg-warning text-dark mb-2">150</span><br>
+                                    <button class="btn btn-outline-danger btn-sm">Completar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Desafio 2 (completo) -->
+                        <div class="card mb-3 desafio-card completed" data-title="Cross-sell Pro">
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="card-title mb-1 fw-bold">Cross-sell Pro</h5>
+                                    <p class="card-text text-muted mb-0">Ofereça cross-sell em 2 atendimentos</p>
+                                </div>
+                                <div class="text-end">
+                                    <span class="badge bg-success mb-2">100</span><br>
+                                    <span class="badge bg-success">Completado <i class="bi bi-check"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Desafio 3 -->
+                        <div class="card mb-3 desafio-card" data-title="Conhecimento Swift">
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="card-title mb-1">Conhecimento Swift</h5>
+                                    <p class="card-text text-muted mb-0">Assista 1 vídeo de capacitação</p>
+                                </div>
+                                <div class="text-end">
+                                    <span class="badge bg-warning text-dark mb-2">50</span><br>
+                                    <button class="btn btn-outline-danger btn-sm">Completar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Semanais -->
+                <div class="tab-pane fade" id="semanais">
+                    <div class="text-center text-muted py-5">Nenhum desafio semanal disponível.</div>
+                </div>
+                <!-- Treinamentos -->
+                <div class="tab-pane fade" id="treinamentos">
+                    <div class="text-center text-muted py-5">Nenhum treinamento disponível.</div>
+                </div>
+            </div>
+        </div>
+    </main> 
 
     <!-- Menu Inferior-->
     <nav class="nav nav-pills nav-fill nav-button">
