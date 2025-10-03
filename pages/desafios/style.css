@@ -13,10 +13,26 @@ body {
 }
 
 /* Variáveis CSS */
+
 :root {
     --cor-laranja: #ED5C2C;
     --cor-preta: #000000;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --highlight-bg: #fff5f5;
+    --first-place-bg: #fff1f1;
+    --tab-active-bg: #f0f0f0;
+    --dourado: #FCD34D;
+    --cinza: #64748B;
 }
+
+
 
 .logo {
     max-width: 150px;
@@ -24,6 +40,35 @@ body {
     margin-bottom: 1rem;
 }
 
+.tab-menu {
+    display: flex;
+    background-color: var(cor --cinza);
+
+    gap: 0.5rem;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 12px 24px;
+    border: none;
+    background: transparent;
+    color: var(--cinza);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-button.active {
+    background-color: var(--tab-active-bg);
+    font-weight: 600;
+}
+
+.tab-button:hover:not(.active) {
+    background-color: #f8f9fa;
+}
 /* Estilos para navegação */
 .nav-button {
     position: fixed;
